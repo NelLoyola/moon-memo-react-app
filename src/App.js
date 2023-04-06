@@ -1,16 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import HomePage from "./components/HomePage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./components/Home";
 import MoonPhase from "./components/MoonPhase";
 
 function App() {
   return (
     <Router>
       <div>
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/moonphase" component={MoonPhase} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/moonphase" element={<MoonPhase />} />
+        </Routes>
       </div>
     </Router>
   );
