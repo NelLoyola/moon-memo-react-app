@@ -24,3 +24,14 @@ button {
   border: solid black;
   border-radius: 0.5rem;
 }
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
