@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  margin-top: 2rem;
+  width: 30rem;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #fafbf5;
+  color: black;
+  border: solid black;
+  border-radius: 0.5rem;
+}
