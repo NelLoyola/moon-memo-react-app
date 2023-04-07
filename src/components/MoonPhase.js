@@ -64,7 +64,10 @@ function MoonPhase() {
   return (
     <div className={styles.container}>
       <img src={moonPhaseImage} alt="Moon phase" className={styles.image} />
-      <div className={styles.name}>{moonPhaseName}</div>
+      <div className={styles.text}>
+        <div className={styles.label}>Today's moon phase is</div>
+        <div className={styles.name}>{moonPhaseName}</div>
+      </div>
     </div>
   );
 }
