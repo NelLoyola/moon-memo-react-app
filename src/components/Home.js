@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./Home.module.css";
+import MoonLogo from "./moon_memo_logo.png"; // import the logo image
 
 function HomePage() {
   return (
-    <div>
-      <img src="src/components/moon_memo_logo.png" alt="moonlogo" />
+    <div className={styles.container}>
+      <img src={MoonLogo} alt="moonlogo" className={styles.logo} />
       <Link to="/moonphase">
-        <button>Check today's moon phase</button>
+        <button className={styles.button}>Check today's moon phase</button>
       </Link>
     </div>
   );
