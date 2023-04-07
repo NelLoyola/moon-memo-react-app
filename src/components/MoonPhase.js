@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-//import "/Users/danielleloyola/moon-memo-app/src/components/MoonPhase.CSS";
+import styles from "./MoonPhase.module.css";
 import getMoonPhaseImage from "./getMoonPhaseImage";
 
 function MoonPhase() {
@@ -62,9 +62,12 @@ function MoonPhase() {
   const moonPhaseImage = getMoonPhaseImage(moonPhaseName);
 
   return (
-    <div className="moon-phase">
-      <img src={moonPhaseImage} alt="Moon phase" />
-      <div className="moon-phase__name">{moonPhaseName}</div>
+    <div className={styles.container}>
+      <img src={moonPhaseImage} alt="Moon phase" className={styles.image} />
+      <div className={styles.text}>
+        <div className={styles.label}>Today's moon phase is</div>
+        <div className={styles.name}>{moonPhaseName}</div>
+      </div>
     </div>
   );
 }

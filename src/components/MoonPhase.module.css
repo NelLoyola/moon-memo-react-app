@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image {
+  width: 20rem;
+  margin-top: 2rem;
+}
+
+.text {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.label {
+  font-size: 1.5rem;
+  color: #fafbf5;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 2rem;
+  color: #fafbf5;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .image {
+    width: 30rem;
+  }
+
+  .name {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-style: bold;
+    color: #fafbf5;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  .name {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+}
